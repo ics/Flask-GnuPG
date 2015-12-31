@@ -10,7 +10,7 @@ from setuptools import setup
 setup(
     name='Flask-GnuPG',
     version='0.1',
-    url='http://github.com/ics/Flask-GnuPG/',
+    url='https://github.com/ics/Flask-GnuPG/',
     license='MIT',
     author='Alexandru Ciobanu',
     author_email='iscandr@gmail.com',
