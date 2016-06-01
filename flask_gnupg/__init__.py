@@ -62,6 +62,6 @@ def get_keyid(email=None):
     for pub_key in gpg.list_keys():
         for uid in pub_key['uids']:
             match = re.match(r"^.*<(.*)>.*$", uid)
-            if match.group(1) == email:
+            if match and match.group(1).lower() == email.lower():
                 return pub_key['keyid']
     return None
